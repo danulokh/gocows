@@ -1,0 +1,33 @@
+.header
+    padding: 50px 0 0 0
+    &-nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__list
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 580px
+            &_link
+                position: relative
+                font-family: $playfair
+                font-weight: 400
+                font-size: 14px
+                text-transform: uppercase
+                color: #626262
+                transition: .4s
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    bottom: -5px
+                    right: 0
+                    height: 2px
+                    background-color: #b4ad9e
+                    transition: .4s
+                    transform: scaleX(0)
+                &:hover
+                    color: #b4ad9e
+                    &::before
+                        transform: scaleX(1)
